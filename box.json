@@ -1,0 +1,45 @@
+{
+    "name":"Responsive Theme - Piccolo for contentbox-theme",
+    "version":"1.0",
+    "author":"Lucid Outsourcing Solutions",
+    "location":"https://github.com/LucidSolutions/cbpiccolo/archive/master.zip",
+    "homepage":"http://www.ortussolutions.com/products/contentbox",
+    "documentation":"https://github.com/LucidSolutions/cbpiccolo",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/LucidSolutions/cbpiccolo"
+    },
+    "bugs":"https://github.com/LucidSolutions/cbpiccolo/issues",
+    "slug":"cbpiccolo",
+    "shortDescription":"Responsive Theme - Piccolo for contentbox-theme",
+    "description":"Responsive Theme - Piccolo for contentbox-theme",
+    "instructions":"",
+    "changelog":"",
+    "type":"contentbox-themes",
+    "license":[
+        {
+            "type":"Apache2",
+            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ],
+    "contributors":[
+        
+    ],
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        
+    },
+    "scripts":{
+        
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
