@@ -1,11 +1,12 @@
-﻿<cfoutput>
+﻿
+<cfoutput>
 
 <!--- Body Main --->
 <section id="body-main">
 	<div class="container">
 		<div class="row">
 			<!--- Content --->
-			<div class="span9 mrg40T">
+			<div class="span9 mrg20T">
 
 				<!--- ContentBoxEvent --->
 				#cb.event( "cbui_preIndexDisplay" )#
@@ -47,7 +48,7 @@
 
 			<!--- SideBar --->
 			<cfif args.sidebar>
-			<div class="span3 mrg40T" id="blog-sidenav">
+			<div class="span3 mrg20T" id="blog-sidenav">
 				#cb.quickView( view='_blogsidebar', args=args )#
 			</div>
 			</cfif>
@@ -56,3 +57,10 @@
 	</div>
 </section>
 </cfoutput>
+
+<script type="text/javascript">
+$('.contentBar').find('.row').css('margin-bottom','10px')
+$('.contentBar').find('.col-xs-12').first().css("float","left");
+$('.contentBar').find('.col-xs-12').last().css("float","right");
+
+</script>

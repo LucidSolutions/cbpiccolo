@@ -70,7 +70,7 @@
 										<cfif structKeyExists( menuItem, "subPageMenu" )>
 											<option>
 												<a href="#menuItem.link#" class="dropdown-toggle" data-toggle="dropdown">#menuItem.title# <b class="caret"></b></a>
-												#buildSubMenu( menuData=menuItem.subPageMenu, parentLink=menuItem.link, parentTitle=menuItem.title )#
+												#buildSubMobileMenu( menuData=menuItem.subPageMenu, parentLink=menuItem.link, parentTitle=menuItem.title )#
 											</option>
 										<cfelse>
 											<option>
@@ -102,6 +102,23 @@ any function buildSubMenu( required menuData, required parentLink, required pare
 		}
 	}
 	menu &= '</ul>';
+
+	return menu;
+}
+any function buildSubMobileMenu( required menuData, required parentLink, required parentTitle ){
+	var menu = '';
+
+	// Parent
+	//menu &= '<a href="#parentLink#"><i class="fa fa-chevron-down"></i> <strong>#parentTitle#</strong></a>';
+
+	for( var menuItem in arguments.menuData ){
+		if( !structKeyExists( menuItem, "subPageMenu" ) ){
+			menu &= '<option value="#menuItem.link#"> - #menuItem.title#</option>';
+		} else {
+			menu &= '<a href="#menuItem.link#" class="dropdown-toggle" data-toggle="dropdown">#menuItem.title#</a>';
+			menu &= buildSubMobileMenu( menuItem.subPageMenu, menuItem.link, menuItem.parentTitle );
+		}
+	}
 
 	return menu;
 }

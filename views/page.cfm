@@ -19,7 +19,7 @@
 		<cfelse>
 			<cfset variables.span = 9>
 		</cfif>
-		<div class="span#variables.span# mrg40T mrg0L">
+		<div class="span#variables.span# mrg20T mrg0L">
 
 			<h2>#prc.page.getTitle()#</h2>
 			<!--- Render Content --->

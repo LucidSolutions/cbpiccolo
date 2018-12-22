@@ -5,8 +5,8 @@
 	<article>
 			<h3 class="title-bg"><a href="#cb.linkEntry( entry )#">#entry.getTitle()#</a></h3>
 			<div class="post-summary">
-					<cfif entry.getFeaturedImage() NEQ ''>
-							<a href="#entry.getFeaturedImage()#"><img src="#entry.getFeaturedImage()#" alt="Post Thumb"></a>
+					<cfif entry.getFeaturedImageURL() NEQ ''>
+							<a href="#entry.getFeaturedImageURL()#"><img src="#entry.getFeaturedImageURL()#" alt="Post Thumb"></a>
 					</cfif>
 
 					<p>#entry.renderContent()#</p>
