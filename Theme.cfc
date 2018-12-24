@@ -67,7 +67,7 @@ component{
 	// Layout Variables
     this.name       	= "Piccolo Theme";
 	this.description 	= "Content Box Theme - Piccolo Theme";
-	this.version		= "1.0.0";
+	this.version		= "2.0";
 	this.author 		= "Lucid OutSourcing Solutions";
 	this.authorURL		= "http://www.lucidsolutions.in";
 	// Screenshot URL, can be absolute or locally in your layout package.
