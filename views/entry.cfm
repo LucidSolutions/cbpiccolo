@@ -13,8 +13,8 @@
 
 						<h3 class="title-bg">#prc.entry.getTitle()#</h3>
 						<div class="post-content">
-						<cfif prc.entry.getFeaturedImage() NEQ ''>
-								<a href="#prc.entry.getFeaturedImage()#"><img src="#prc.entry.getFeaturedImage()#" alt="Post Thumb"></a>
+						<cfif prc.entry.getFeaturedImageURL() NEQ ''>
+								<img src="#prc.entry.getFeaturedImageURL()#" alt="Post Thumb">
 						</cfif>
 
 						<!--- content --->

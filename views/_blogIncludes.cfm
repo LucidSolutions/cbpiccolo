@@ -43,6 +43,11 @@
 <link rel="stylesheet" href="#cb.themeRoot()#/includes/css/prettyPhoto.css?v=1" />
 <link rel="stylesheet" href="#cb.themeRoot()#/includes/css/style-ie.css?v=1" />
 
+<cfif len( cb.themeSetting( 'cssStyleOverrides' ) )>
+<style>
+	#cb.themeSetting( 'cssStyleOverrides' )#
+</style>	
+</cfif>
 
 <!--- ********************************************************************************* --->
 <!--- 					JAVASCRIPT														--->

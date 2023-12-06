@@ -23,7 +23,7 @@
 			<div class="span7 navigation">
 					<div class="navbar hidden-phone">
 						<ul class="nav ">
-						<cfif ( !prc.cbSettings.cb_site_disable_blog )>
+						<cfif ( !structKeyExists(prc.cbSettings, "cb_site_disable_blog") )>
 							<cfif cb.isBlogView()><li class="active"><cfelse><li></cfif>
 								<a href="#cb.linkBlog()#">Blog</a>
 							</li>
@@ -60,7 +60,7 @@
 							<div class="mobile-nav-select">
 							<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
 									<option value="">Navigate...</option>
-									<cfif ( !prc.cbSettings.cb_site_disable_blog )>
+									<cfif ( !structKeyExists(prc.cbSettings, "cb_site_disable_blog") )>
 										<option>
 											<a href="#cb.linkBlog()#">Blog</a>
 										</option>

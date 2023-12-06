@@ -55,7 +55,10 @@
                 <div class="span12 footer-col footer-sub">
                     <div class="row no-margin">
                         <div class="span6">
-							<span class="text-muted">Copyright &copy; #cb.siteName()#.  All rights reserved.</span>
+							<span class="text-muted">
+                               Theme Developed By <a href="https://lucidoutsourcing.com/">Lucid Outsourcing Solutions Pvt. Ltd.</a>
+                            </span>
+                            <div class="footer-copy">#cb.themeSetting( 'footerBox' )#</div>
                         </div>
                         <div class="span6">
                             <span class="right">

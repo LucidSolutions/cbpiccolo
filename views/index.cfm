@@ -16,7 +16,7 @@
 					<div class="alert alert-info padB mrg20T">
 						<a class="pull-right btn btn-primary btn-sm" href="#cb.linkBlog()#" title="Remove filter and view all entries">Remove Filter</a>
 
-						Category Filtering: '#rc.category#'
+						Category Filtering: '#encodeForHTML( rc.category )#'
 					</div>
 				</cfif>
 
@@ -26,7 +26,7 @@
 						<a class="btn btn-primary" href="#cb.linkBlog()#" title="Clear search and view all entries">Clear Search</a>
 					</p>
 					<div class="infoBar">
-						Searching by: '#rc.q#'
+						Searching by: '#encodeForHTML( rc.q )#'
 					</div>
 					<br/>
 				</cfif>

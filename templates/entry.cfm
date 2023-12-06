@@ -6,7 +6,7 @@
 			<h3 class="title-bg"><a href="#cb.linkEntry( entry )#">#entry.getTitle()#</a></h3>
 			<div class="post-summary">
 					<cfif entry.getFeaturedImageURL() NEQ ''>
-							<a href="#entry.getFeaturedImageURL()#"><img src="#entry.getFeaturedImageURL()#" alt="Post Thumb"></a>
+							<a href="#cb.linkEntry( entry )#"><img src="#entry.getFeaturedImageURL()#" alt="Post Thumb"></a>
 					</cfif>
 
 					<p>#entry.renderContent()#</p>
